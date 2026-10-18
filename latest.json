@@ -1,6 +1,6 @@
 {
-  "version": "2.2.3",
-  "notes": "切换节点后立即断开旧连接,流量真实切换到新节点;修复切换 401",
+  "version": "2.3.0",
+  "notes": "新增代理域名白名单(指定域名强制走代理)与直连白名单;分流规则增强(resolve + .cn 规则集)",
   "asset": "NEXA-amd64-installer.exe",
-  "sha256": "9c5247e787847c62d20dd7dc198e45054eb54601fa0c439204c95aa07f31f10f"
+  "sha256": "d908993089d00426f9a2debcdfc60b2d092bba0bb70db39ed2ff8e7f7d4daa98"
 }
