@@ -1,4 +1,4 @@
-# NEXA v2.5.4
+# NEXA v2.5.5
 
 现代、轻量、单文件的 Windows 桌面网络工具。Go + Wails v2 + sing-box 内核,无边框玻璃拟态界面,日/夜双主题,规则/全局智能分流。
 
@@ -27,7 +27,7 @@ v2.2.0 及以上的已安装版本会**自动检测新版本**并支持一键升
 安装包 SHA256:
 
 ```
-eee0e08ff05136a6b7ffef0c056397f04fcb971d607832e7297bf8531f08a6e2
+3420fcde6373dd9cd8ab01e795ea0230f1730464cdd643aac6dacf45903d6110
 ```
 
 ## ⚙️ 系统要求
@@ -38,16 +38,23 @@ eee0e08ff05136a6b7ffef0c056397f04fcb971d607832e7297bf8531f08a6e2
 | 运行时 | WebView2 Runtime(安装包自动处理) |
 | 内核 | sing-box(应用内自动下载更新) |
 
-## 🔄 本次更新(v2.5.4)
+## 🔄 本次更新(v2.5.5)
 
-- **内置国内主流网盘直连白名单**:网盘的文件上传/下载实际走各家云存储/CDN 域名(如夸克走阿里云 OSS `aliyuncs.com`),规则模式的域名库未必覆盖、全局模式更会走代理。现将以下服务的**主站 + 传输通道域名**内置为默认直连白名单,**任何模式下网盘上传下载都不再消耗代理流量**,可在「设置 → 网络 → 直连域名白名单」中查看与增删:
-  - 夸克网盘 / UC:quark.cn · quark.sm.cn · uc.cn
-  - 阿里云盘:aliyundrive.com · aliyundrive.net · alipan.com
-  - 阿里云 CDN/OSS(夸克与阿里云盘传输通道):alicdn.com · aliyuncs.com · aliyun.com
-  - 百度网盘:bcebos.com · baidubce.com · baidupan.com
-  - 腾讯微云:weiyun.com · myqcloud.com
-  - 115 网盘:115.com · 115cdn.com;123 云盘:123pan.com · 123pan.cn
-  - 蓝奏云:lanzou.com · lanzoui.com · lanzoux.com;迅雷:xunlei.com;天翼云盘:189.cn
+- **直连白名单扩展至国内主流视频平台**:视频站主站虽被国内域名库覆盖,但视频 CDN 常是独立域名——例如 B 站的 Akamai 镜像源(upos-hz-mirrorakam.akamaized.net)解析在海外,极易漏走代理。现将以下平台的主站与视频/静态 CDN 域名全部纳入默认直连白名单,**任何模式下观看视频都不再消耗代理流量**(设置中可增删):
+  - 哔哩哔哩:bilibili.com · b23.tv · biliapi.com/net · bilivideo.com/cn · hdslb.com · biligame.com · upos-hz-mirrorakam.akamaized.net(B 站 Akamai 镜像源)
+  - 爱奇艺:iqiyi.com · qy.net · iqiyipic.com(海外版 iq.com 不在直连列,正常走代理)
+  - 腾讯视频 / 腾讯系:qq.com(含 qqvideo CDN);优酷:youku.com;芒果 TV:mgtv.com · hitv.com
+  - 抖音 / 西瓜:douyin.com · douyinpic.com · douyinstatic.com · douyinvod.com · zjcdn.com · ixigua.com
+  - 快手:kuaishou.com · gifshow.com;斗鱼:douyu.com;虎牙:huya.com
+
+## 🔄 上一版更新(v2.5.4)
+
+- **内置国内主流网盘直连白名单**:夸克 / UC / 阿里云盘 / 百度网盘 / 腾讯微云 / 115 / 123 云盘 / 蓝奏云 / 迅雷 / 天翼云盘的主站与传输通道域名(alicdn/aliyuncs/bcebos/myqcloud 等),任何模式下网盘上传下载不再消耗代理流量
+
+## 🔄 更早更新(v2.5.3)
+
+- **修复 QQ / 微信网页快捷登录**:本机回环桥域名加入系统代理绕过名单
+- **自更新防篡改**:更新信息 ed25519 签名,程序内置公钥验签;内核下载镜像实测校正 + 自托管兜底
 
 ## 🔄 上一版更新(v2.5.3)
 

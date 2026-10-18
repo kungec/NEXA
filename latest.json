@@ -1,7 +1,7 @@
 {
-  "version": "2.5.4",
-  "notes": "内置国内主流网盘直连白名单(夸克/百度/阿里云盘/微云/115/123/蓝奏云等主站与传输通道),网盘上传下载不再消耗代理流量",
+  "version": "2.5.5",
+  "notes": "直连白名单扩展至国内主流视频平台(B站/爱奇艺/腾讯视频/优酷/芒果/抖音/快手/斗鱼/虎牙),含B站Akamai镜像源,视频流量不再走代理",
   "asset": "NEXA-amd64-installer.exe",
-  "sha256": "eee0e08ff05136a6b7ffef0c056397f04fcb971d607832e7297bf8531f08a6e2",
-  "sig": "aP0YJcBYaQxhN56w+uz1ji+cbc2Zo0psCReJ3O+4iYCfKV8Y88pAuuYsjbR9gGTGc6CiD2fAJGLst/EEr1zQAA=="
+  "sha256": "3420fcde6373dd9cd8ab01e795ea0230f1730464cdd643aac6dacf45903d6110",
+  "sig": "6Pgjz7IhVW6O8cpOC5tBHwsHsPluuggkdQW+DwAE6v+0Crx3VJfXORa4gLlFCy/6Ye0Pj0G4HzgvLzYsUIz3Cg=="
 }
