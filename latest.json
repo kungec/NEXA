@@ -1,0 +1,6 @@
+{
+  "version": "2.2.0",
+  "notes": "新增直连域名白名单:名单内网址任何模式下都直连;内核日志级别设置(详细/简洁);修复节点切换 401;诊断页 TUN/DNS 泄漏检测修正",
+  "asset": "NEXA-amd64-installer.exe",
+  "sha256": "af434ab03eced8d6ff782e490cd1f4dc31f565585a775bb4b4227cb0dc097ed6"
+}
