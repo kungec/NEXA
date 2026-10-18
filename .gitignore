@@ -1,0 +1,5 @@
+NEXA-amd64-installer.exe
+*.sha256
+publish-to-github.cmd
+release-notes.md
+.mimosa/
