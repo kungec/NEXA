@@ -1,6 +1,6 @@
 {
-  "version": "2.2.2",
-  "notes": "自更新通道就绪:发现新版本一键升级;内核日志默认简洁;DNS 默认 DoH 1.1.1.1",
+  "version": "2.2.3",
+  "notes": "切换节点后立即断开旧连接,流量真实切换到新节点;修复切换 401",
   "asset": "NEXA-amd64-installer.exe",
-  "sha256": "b351e2b468719f340a340bd882b2c6092e8798d2d9d7d5b29ace08db61deec45"
+  "sha256": "9c5247e787847c62d20dd7dc198e45054eb54601fa0c439204c95aa07f31f10f"
 }
