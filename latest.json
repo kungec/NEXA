@@ -1,7 +1,7 @@
 {
-  "version": "2.5.2",
-  "notes": "自更新防篡改:更新信息 ed25519 签名,程序内置公钥验签,镜像篡改整包也无法伪造",
+  "version": "2.5.3",
+  "notes": "修复 QQ/微信网页快捷登录:本机回环桥域名加入系统代理绕过名单",
   "asset": "NEXA-amd64-installer.exe",
-  "sha256": "ffdf29747f82f84204910e130784fb2f1fa4a7a99312520ea2de78417959bde9",
-  "sig": "c3pKu+zf6U33wdmEnHaEFZwvGy6NK/HXnGjUsYxE7X+QEXW3q8pUJf3PyTdW0xSs/vGU32q8VVrU1SbJzfY/Ag=="
+  "sha256": "83e8a35dedce4b87b5a0c409457b41e6906307222717990bcb787bcbe545b4f3",
+  "sig": "qnTfQoBNh2pJsH/HqoJoBw11ALYvbI+jvkzP6I1uVcfoJnXAT4VOQQ1sRUzoZQmcV31dPojnPGzUMlJ3s36GDA=="
 }
