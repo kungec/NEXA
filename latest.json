@@ -1,7 +1,7 @@
 {
-  "version": "2.5.3",
-  "notes": "修复 QQ/微信网页快捷登录:本机回环桥域名加入系统代理绕过名单",
+  "version": "2.5.4",
+  "notes": "内置国内主流网盘直连白名单(夸克/百度/阿里云盘/微云/115/123/蓝奏云等主站与传输通道),网盘上传下载不再消耗代理流量",
   "asset": "NEXA-amd64-installer.exe",
-  "sha256": "83e8a35dedce4b87b5a0c409457b41e6906307222717990bcb787bcbe545b4f3",
-  "sig": "qnTfQoBNh2pJsH/HqoJoBw11ALYvbI+jvkzP6I1uVcfoJnXAT4VOQQ1sRUzoZQmcV31dPojnPGzUMlJ3s36GDA=="
+  "sha256": "eee0e08ff05136a6b7ffef0c056397f04fcb971d607832e7297bf8531f08a6e2",
+  "sig": "aP0YJcBYaQxhN56w+uz1ji+cbc2Zo0psCReJ3O+4iYCfKV8Y88pAuuYsjbR9gGTGc6CiD2fAJGLst/EEr1zQAA=="
 }
