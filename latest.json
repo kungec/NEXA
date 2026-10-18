@@ -1,6 +1,7 @@
 {
-  "version": "2.5.1",
-  "notes": "内核下载加固:修正失效镜像排序(gh-proxy 优先)+ 新增两个镜像源 + 官方内核包自托管兜底,国内全新安装下载内核更稳更快",
+  "version": "2.5.2",
+  "notes": "自更新防篡改:更新信息 ed25519 签名,程序内置公钥验签,镜像篡改整包也无法伪造",
   "asset": "NEXA-amd64-installer.exe",
-  "sha256": "f7cc2df04fca5345d6d194fe8abb617e83a2303fbc9bd917fa76e02db3f0e9ca"
+  "sha256": "ffdf29747f82f84204910e130784fb2f1fa4a7a99312520ea2de78417959bde9",
+  "sig": "c3pKu+zf6U33wdmEnHaEFZwvGy6NK/HXnGjUsYxE7X+QEXW3q8pUJf3PyTdW0xSs/vGU32q8VVrU1SbJzfY/Ag=="
 }
