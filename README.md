@@ -157,7 +157,7 @@ NEXA 在正常退出、异常崩溃后都会自动还原系统代理;若检测�
 与桌面同源的「极光夜」设计体系与 sing-box 1.14 内核,**进程内运行,免 root**。版号线独立(Android 3.x),与 Windows 2.x / macOS 1.x 互不干扰。
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-3.1.0-blue" alt="version">
+  <img src="https://img.shields.io/badge/version-3.1.1-blue" alt="version">
   <img src="https://img.shields.io/badge/platform-Android%208%2B-3DDC84" alt="platform">
   <img src="https://img.shields.io/badge/kernel-sing--box%201.14-8A3BFF" alt="kernel">
   <img src="https://img.shields.io/badge/自更新-中转级联-orange" alt="auto update">
