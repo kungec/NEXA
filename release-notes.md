@@ -1,4 +1,4 @@
-# NEXA v2.5.5
+# NEXA v2.5.6
 
 现代、轻量、单文件的 Windows 桌面网络工具。Go + Wails v2 + sing-box 内核,无边框玻璃拟态界面,日/夜双主题,规则/全局智能分流。
 
@@ -27,7 +27,7 @@ v2.2.0 及以上的已安装版本会**自动检测新版本**并支持一键升
 安装包 SHA256:
 
 ```
-3420fcde6373dd9cd8ab01e795ea0230f1730464cdd643aac6dacf45903d6110
+a50f589ba7dd11658e555e81a5d2a2c986942cd54c3fad04c26dae4775ab4209
 ```
 
 ## ⚙️ 系统要求
@@ -38,23 +38,21 @@ v2.2.0 及以上的已安装版本会**自动检测新版本**并支持一键升
 | 运行时 | WebView2 Runtime(安装包自动处理) |
 | 内核 | sing-box(应用内自动下载更新) |
 
-## 🔄 本次更新(v2.5.5)
+## 🔄 本次更新(v2.5.6)
 
-- **直连白名单扩展至国内主流视频平台**:视频站主站虽被国内域名库覆盖,但视频 CDN 常是独立域名——例如 B 站的 Akamai 镜像源(upos-hz-mirrorakam.akamaized.net)解析在海外,极易漏走代理。现将以下平台的主站与视频/静态 CDN 域名全部纳入默认直连白名单,**任何模式下观看视频都不再消耗代理流量**(设置中可增删):
-  - 哔哩哔哩:bilibili.com · b23.tv · biliapi.com/net · bilivideo.com/cn · hdslb.com · biligame.com · upos-hz-mirrorakam.akamaized.net(B 站 Akamai 镜像源)
-  - 爱奇艺:iqiyi.com · qy.net · iqiyipic.com(海外版 iq.com 不在直连列,正常走代理)
-  - 腾讯视频 / 腾讯系:qq.com(含 qqvideo CDN);优酷:youku.com;芒果 TV:mgtv.com · hitv.com
-  - 抖音 / 西瓜:douyin.com · douyinpic.com · douyinstatic.com · douyinvod.com · zjcdn.com · ixigua.com
-  - 快手:kuaishou.com · gifshow.com;斗鱼:douyu.com;虎牙:huya.com
+- **Telegram 等海外服务显式纳入代理白名单**:telegram.org · t.me · telegram.me · tdesktop.com · telesco.pe · cdn-telegram.org——任何模式下都强制走代理,且 DNS 经远程 DoH 解析,规避国内 DNS 污染
+- 经真实内核实测:规则模式下 Telegram 数据中心直连 IP 与域名均正常隧道,内核路由本就支持;白名单进一步将其显式固化,不受未来规则调整影响
+- **Telegram 客户端小贴士**:若规则模式下仍无网络,请检查 Telegram「设置 → 高级 → 连接方式」应为「使用系统代理设置」,并清除手动配置的 SOCKS5/MTProto 代理后重启 Telegram
 
-## 🔄 上一版更新(v2.5.4)
+## 🔄 上一版更新(v2.5.5)
 
-- **内置国内主流网盘直连白名单**:夸克 / UC / 阿里云盘 / 百度网盘 / 腾讯微云 / 115 / 123 云盘 / 蓝奏云 / 迅雷 / 天翼云盘的主站与传输通道域名(alicdn/aliyuncs/bcebos/myqcloud 等),任何模式下网盘上传下载不再消耗代理流量
+- **直连白名单扩展至国内主流视频平台**:哔哩哔哩(含 Akamai 镜像源)/ 爱奇艺 / 腾讯视频 / 优酷 / 芒果 TV / 抖音 / 快手 / 斗鱼 / 虎牙的主站与 CDN 域名,任何模式看视频不再消耗代理流量
 
-## 🔄 更早更新(v2.5.3)
+## 🔄 更早更新
 
-- **修复 QQ / 微信网页快捷登录**:本机回环桥域名加入系统代理绕过名单
-- **自更新防篡改**:更新信息 ed25519 签名,程序内置公钥验签;内核下载镜像实测校正 + 自托管兜底
+- **v2.5.4**:内置国内主流网盘直连白名单(夸克 / UC / 阿里云盘 / 百度 / 微云 / 115 / 123 / 蓝奏云 / 迅雷 / 天翼)
+- **v2.5.3**:修复 QQ / 微信网页快捷登录(本机回环桥加入系统代理绕过名单)
+- **v2.5.2**:自更新防篡改(ed25519 签名验签)+ 内核下载加固(镜像校正 + 自托管兜底)
 
 ## 🔄 上一版更新(v2.5.3)
 

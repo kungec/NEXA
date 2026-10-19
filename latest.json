@@ -1,7 +1,7 @@
 {
-  "version": "2.5.5",
-  "notes": "直连白名单扩展至国内主流视频平台(B站/爱奇艺/腾讯视频/优酷/芒果/抖音/快手/斗鱼/虎牙),含B站Akamai镜像源,视频流量不再走代理",
+  "version": "2.5.6",
+  "notes": "Telegram 等海外服务显式纳入代理白名单:任何模式强制走代理,DNS 经远程 DoH 防污染",
   "asset": "NEXA-amd64-installer.exe",
-  "sha256": "3420fcde6373dd9cd8ab01e795ea0230f1730464cdd643aac6dacf45903d6110",
-  "sig": "6Pgjz7IhVW6O8cpOC5tBHwsHsPluuggkdQW+DwAE6v+0Crx3VJfXORa4gLlFCy/6Ye0Pj0G4HzgvLzYsUIz3Cg=="
+  "sha256": "a50f589ba7dd11658e555e81a5d2a2c986942cd54c3fad04c26dae4775ab4209",
+  "sig": "IA9d49sncpvH3/YKxElovQoyO9a9M/ar/L4iR3bfsT74xUUS71qT2h57G6zs8InoCCw1pNTn+dYaKzHena0cDQ=="
 }
