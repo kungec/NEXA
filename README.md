@@ -3,7 +3,17 @@
 **跨平台代理客户端**(Windows / macOS,机场面板配套),Go + Wails v2,同一代码库按平台编译。
 UI 为定稿的「极光夜」玻璃拟态设计:深蓝底 + 蓝/紫/青极光渐变,内置日/夜双主题与中/英界面语言(均持久化)。
 
-![icon](build/appicon.png)
+![icon](icon.png)
+
+## 界面预览
+
+| 首页(夜间) | 首页(日间) |
+| --- | --- |
+| ![home-dark](images/home-dark.png) | ![home-light](images/home-light.png) |
+
+| 节点 | 策略组 |
+| --- | --- |
+| ![nodes-dark](images/nodes-dark.png) | ![groups-dark](images/groups-dark.png) |
 
 ## 下载(Windows / macOS 双版本)
 
