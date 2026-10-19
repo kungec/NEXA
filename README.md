@@ -7,8 +7,8 @@
 <h1 align="center">NEXA</h1>
 
 <p align="center">
-  <b>现代、轻量、单文件的 Windows 桌面网络工具</b><br/>
-  Go + Wails v2 + sing-box 内核 · 无边框玻璃拟态界面 · 日/夜双主题 · 规则/全局分流
+  <b>现代、轻量的跨平台代理客户端 · Windows / macOS / Android</b><br/>
+  Go + Wails v2 + sing-box 内核 · 玻璃拟态界面 · 日/夜双主题 · 规则/全局分流
 </p>
 
 <p align="center">
@@ -16,11 +16,16 @@
   <img src="https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey" alt="platform">
   <img src="https://img.shields.io/badge/kernel-sing--box%201.14-8A3BFF" alt="kernel">
   <img src="https://img.shields.io/badge/license-freeware-success" alt="license">
+  <img src="https://img.shields.io/badge/Android%203.x-3.1.0-3DDC84" alt="android">
+</p>
+
+<p align="center">
+  <b>平台:</b> 🪟 <a href="#-下载安装--windows">Windows 2.x</a> &nbsp;·&nbsp; 🍎 <a href="../../releases/tag/mac-v1.3.0">macOS 1.x</a> &nbsp;·&nbsp; 🤖 <a href="#-android-版本31x-独立版号线">Android 3.x</a>
 </p>
 
 ---
 
-## ✨ 界面预览
+## ✨ 界面预览 · Windows
 
 **首页 · 夜间主题**
 
@@ -46,7 +51,7 @@
 
 ![设置中心](images/set-dark.png)
 
-## 📥 下载安装
+## 📥 下载安装 · Windows
 
 前往 [**Releases**](../../releases) 页面下载最新版 `NEXA-amd64-installer.exe`:
 
@@ -57,7 +62,7 @@
 
 > 安装包体积约 8 MB。内核(sing-box)在首次连接时自动下载,无需手动操作。
 
-## 📖 使用说明
+## 📖 使用说明 · Windows
 
 ### 第 1 步 · 导入节点
 
@@ -124,7 +129,7 @@
 | 🌗 双主题 | 极光夜 / 日间模式,即时切换持久化 |
 | 🧹 自动维护 | 日志自动轮转清理、内核一键下载更新、WebView2 自检、退出自动还原系统代理 |
 
-## ⚙️ 系统要求
+## ⚙️ 系统要求 · Windows
 
 | 项目 | 要求 |
 | --- | --- |
@@ -146,6 +151,70 @@ NEXA 在正常退出、异常崩溃后都会自动还原系统代理;若检测�
 
 **Q: 连接后如何确认在走节点?**
 「日志」页可查看每条连接的进出明细;「诊断」页一键自检全链路状态。
+
+## 📱 Android 版(v3.1.x · 独立版号线)
+
+与桌面同源的「极光夜」设计体系与 sing-box 1.14 内核,**进程内运行,免 root**。版号线独立(Android 3.x),与 Windows 2.x / macOS 1.x 互不干扰。
+
+<p align="center">
+  <img src="https://img.shields.io/badge/version-3.1.0-blue" alt="version">
+  <img src="https://img.shields.io/badge/platform-Android%208%2B-3DDC84" alt="platform">
+  <img src="https://img.shields.io/badge/kernel-sing--box%201.14-8A3BFF" alt="kernel">
+  <img src="https://img.shields.io/badge/自更新-中转级联-orange" alt="auto update">
+</p>
+
+**首页 · 日间主题(已连接)**
+
+![Android 首页日间](images/android-home-light.png)
+
+**首页 · 夜间主题**(顶栏月亮 / 太阳一键切换)
+
+![Android 首页夜间](images/android-home-dark.png)
+
+**节点管理 与 测速延迟质量条**(条越长、颜色越绿 = 节点越快,与右侧延迟徽章同色)
+
+<p>
+  <img src="images/android-nodes-light.png" width="45%" alt="节点">
+  <img src="images/android-speed-light.png" width="45%" alt="测速质量条">
+</p>
+
+**导入中心**(订阅 / 分享链接 / 相册识别 / 相机扫码)
+
+![Android 导入中心](images/android-import-light.png)
+
+**设置中心**(夜间主题)
+
+![Android 设置](images/android-settings-dark.png)
+
+### 📥 下载与更新
+
+- 前往 [**Releases**](../../releases) 下载最新 `NEXA-Android-arm64.apk`(主流 64 位机型)或 `NEXA-Android-universal.apk`(其他架构),直接安装即可
+- **应用内自动更新**:「设置 → 检查更新」一键检查 → 下载 → 覆盖安装;启动时也会静默检查一次
+- **国内可用**:清单与安装包均走中转镜像级联(gh-proxy 系 5 源 + jsDelivr 兜底),并对更新信息做 ed25519 签名校验、对安装包做 SHA256 校验
+- 版号线独立演进:Android 3.x 的更新与 Windows 2.x / macOS 1.x 的更新互不影响
+
+### 🚀 Android 功能特性
+
+| 模块 | 说明 |
+| --- | --- |
+| 🔌 VpnService 全局接管 | sing-box 1.14 进程内运行,免 root,双栈防泄漏,自身流量防环路 |
+| 🌏 规则 / 全局分流 | 内置国内规则集(镜像回退 + SHA256 锚定),连接中热切换分流模式 |
+| 📶 订阅管理 | Clash / V2Ray / SS 格式,流量与到期显示,WorkManager 周期自动更新 + 更新后自动测速 |
+| 🔍 多种导入 | 订阅链接、分享链接解析、相册识别、相机扫码(CameraX + ZXing) |
+| 🚀 节点测速 | TCP 握手 / HTTP 真实延迟(经内核 204 探测),延迟质量条,连接中热切换节点 |
+| 🧩 系统集成 | 开机自启、下拉栏快捷开关(QS Tile)、分应用代理(排除 / 包含名单)、实时速率曲线 |
+| 🌗 双主题 · 双语 | 极光夜 / 日间即时切换;界面中文 / English 可固定 |
+| 🔄 应用自更新 | GitHub Release + 中转镜像级联 + ed25519 验签 + SHA256 校验 + 系统安装器覆盖升级 |
+
+### ❓ Android 常见问题
+
+**Q: 安装更新时提示"安装未知应用"?**
+系统要求:设置中允许 NEXA「来自此来源安装」一次即可,之后的应用内更新不再询问。
+
+**Q: 检查更新失败?**
+更新走中转镜像级联,个别镜像临时不可用会自动切换下一个;全部失败时多为网络受限,稍后重试或直接到 [Releases](../../releases) 下载。
+
+---
 
 ## 📄 免责声明
 
