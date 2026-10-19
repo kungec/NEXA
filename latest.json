@@ -1,7 +1,7 @@
 {
-  "version": "2.5.6",
-  "notes": "Telegram 等海外服务显式纳入代理白名单:任何模式强制走代理,DNS 经远程 DoH 防污染",
+  "version": "2.5.7",
+  "notes": "测速页优化:延迟条改为质量条(越长越绿=越快,红黄绿分档+悬停说明);总进度条仅在测速时显示",
   "asset": "NEXA-amd64-installer.exe",
-  "sha256": "a50f589ba7dd11658e555e81a5d2a2c986942cd54c3fad04c26dae4775ab4209",
-  "sig": "IA9d49sncpvH3/YKxElovQoyO9a9M/ar/L4iR3bfsT74xUUS71qT2h57G6zs8InoCCw1pNTn+dYaKzHena0cDQ=="
+  "sha256": "cadb44cff1bf2af474c1dd8ceb634a240aecaf9dd6ef31b0faa983793ac2f507",
+  "sig": "LWg1vvYLBcB8ZlLnfaOaS/5/wy4I47IlDSITI/oAm1EKhQW3TDrMvbtxRhLuG3XTT0qZDBZM+wtmJNcepjR+AQ=="
 }
