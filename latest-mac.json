@@ -1,7 +1,7 @@
 {
-  "version": "1.5.1",
-  "notes": "NEXA macOS 1.5.1",
+  "version": "1.6.0",
+  "notes": "NEXA macOS 1.6.0",
   "asset": "NEXA-darwin-arm64.zip",
-  "sha256": "ef5ab62081a8d5a699360636550056a45d530e5c936d525bca327a176e4aa47b",
-  "sig": "+v0xWaY7pf6E+RpcVDcJlFbCQMp91POKQpn5NUQh+/Zn1TIRQPop2qlrZ07rTjshL6a1eDfcx//F2PCAC5RKDg=="
+  "sha256": "f6a7fb612f7eae094d33eafa6b0786ce596dc735f5417212d2c0812106fc9402",
+  "sig": "yFOkerK47HtQybWeyFdPWG1oZL9NnvNqgmnStJa2IIQgvvzB/QalxholsxqTLqvBpcNHlzScM3SaFeHxvbjNAQ=="
 }
