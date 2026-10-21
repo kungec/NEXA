@@ -1,7 +1,7 @@
 {
-  "version": "2.5.7",
-  "notes": "测速页优化:延迟条改为质量条(越长越绿=越快,红黄绿分档+悬停说明);总进度条仅在测速时显示",
+  "version": "2.5.8",
+  "notes": "安全更新:修复Go证书链校验漏洞(CVE-2026-111943);自动更新订阅、更新后自动测速改为默认关闭,需要时请在设置中开启;规则模式连通性修复",
   "asset": "NEXA-amd64-installer.exe",
-  "sha256": "cadb44cff1bf2af474c1dd8ceb634a240aecaf9dd6ef31b0faa983793ac2f507",
-  "sig": "LWg1vvYLBcB8ZlLnfaOaS/5/wy4I47IlDSITI/oAm1EKhQW3TDrMvbtxRhLuG3XTT0qZDBZM+wtmJNcepjR+AQ=="
+  "sha256": "95ba1dc08d37f80d149b1ab235c019c1fb76126f4ea4703f146257ee06d7afde",
+  "sig": "6+rkqkgYnVj9bF/3nJmasV4r/kZC03nqkIobs7LMlIxgAdFxed7iOKAwGkuDjPFnn3t1mD9LW76o5tEx+pm9BA=="
 }
