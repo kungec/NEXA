@@ -1,7 +1,7 @@
 {
-  "version": "3.3.0",
-  "notes": "NEXA Android 3.3.0",
+  "version": "3.3.1",
+  "notes": "NEXA Android 3.3.1",
   "asset": "NEXA-Android-arm64.apk",
-  "sha256": "aab51a10ac21c29fb9c40015f6e8842493184dae59e1273e0849e3fc2752f2a1",
-  "sig": "0OzDw42mMAMu8wqx29XVGUUT0kOdn4TMfEgOhyH3jfxIdFPavQOfu0cDFhDmqLo/+QhEEFbhR0IsvIuV2S+qAQ=="
+  "sha256": "19b93a93c2841427bd34f5efacc9ed2fe84f7ccf524bb96be816f2a084115eeb",
+  "sig": "6UDY94Lq0HKTfbmtI0Fy01NQeIUu1ZeNDsZ7/Nx9XKsUi134tmJuYR+oTJc7/Od4Wb1bzuQYl4VaODdHXljSCg=="
 }
